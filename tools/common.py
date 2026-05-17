@@ -41,7 +41,7 @@ def confirm(s: str, prompt: typing.Optional[str] = None, single_key: bool = Fals
     subprocess.run(['stty','sane'])               # Just in case we got here from single-key reads
     sys.exit(0)
 
-def confirm_abort(s: str) -> typing.Never:
+def confirm_abort(s: str) -> typing.NoReturn:
   confirm(bold(s))
   sys.exit(1)
 
