@@ -7,10 +7,8 @@ steps:
   "Connect to PE1": netlab connect pe1
   "Enter vtysh": vtysh
   "Running configuration": show running
-  "MPLS LFIB": { cmd: show mpls table }
   "IS-IS database details": show isis database detail pe1.00-00
-  "IPv6 routing table": show ipv6 route
-  "Done with PE1": |-
-    exit
-    exit
+  "SR-MPLS prefix segments": show isis segment-routing prefix-segments
+  "MPLS LFIB": { cmd: show mpls route, more: True }
+  "Done with PE1": exit
   "Stop the lab": { cmd: netlab down --cleanup, wait: True }

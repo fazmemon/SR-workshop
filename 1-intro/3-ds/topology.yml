@@ -1,5 +1,5 @@
 provider: clab
-defaults.device: frr
+defaults.device: eos
 module: [ isis, sr ]
 
 isis.area: "49.0042"
@@ -7,6 +7,7 @@ addressing:
   loopback:
     ipv4: 10.0.42.0/24
     ipv6: 2001:db8::/48
+    prefix6: 128
   core:
     ipv4: 192.168.42.0/24
     prefix: 31
