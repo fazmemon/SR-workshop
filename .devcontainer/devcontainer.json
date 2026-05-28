@@ -1,8 +1,8 @@
 {
     "image": "ghcr.io/ipspace/netlab/devcontainer:26.03",
     "hostRequirements": {
-        "cpus": 16,
-        "memory": "64gb",
-        "storage": "128gb"
+        "cpus": 8,
+        "memory": "32gb",
+        "storage": "64gb"
     }
 }
